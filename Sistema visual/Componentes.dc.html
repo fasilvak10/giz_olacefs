@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Sistema visual de la landing</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body { margin: 0; }
+a { color: #0A5F2A; }
+a:hover { color: #034915; }
+</style>
+</helmet>
+
+<div style="width: 1000px; height: 3400px; box-sizing: border-box; background: #FFFFFF; font-family: Inter, system-ui, sans-serif; color: #26312A; padding: 56px 64px; display: flex; flex-direction: column; gap: 52px">
+
+  <div>
+    <p style="margin: 0 0 10px; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; color: #72BF00">SISTEMA VISUAL</p>
+    <h1 style="margin: 0 0 10px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 34px; color: #034915">Encabezado, texto, botones y secciones</h1>
+    <p style="margin: 0; max-width: 68ch; font-size: 15.5px; line-height: 1.7; color: #5A6B5E">Paleta y tipografía tomadas de la presentación institucional de AdaptaInfra. Lo que aparece abajo es lo que usa la landing. El estado de cursor (hover) del botón se indica como pendiente de implementar.</p>
+  </div>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Color</h2>
+    <p style="margin: 0 0 22px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">El verde profundo manda: bandas, títulos y botones. El lima se reserva para elementos grandes: los números de «Antes de empezar», los bordes de acento y la volanta sobre verde profundo.</p>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #034915"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Verde profundo</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#034915 · bandas, titulares, botón primario</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #0A5F2A"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Verde medio</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#0A5F2A · enlaces, hover, acentos</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #00833D"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Verde señal</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#00833D · mosaico, opción de acento</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #72BF00"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Lima</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#72BF00 · números, volanta, bordes de acento</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #A6D39F"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Menta</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#A6D39F · texto sobre fondo verde</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #C7E895"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Verde pálido</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#C7E895 · mosaico</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #EDF4E7"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Verde humo</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#EDF4E7 · chips, bandas suaves</p>
+      </div>
+      <div>
+        <div style="height: 84px; border-radius: 10px; background: #F8F8F8; border: 1px solid #E4EADE"></div>
+        <p style="margin: 10px 0 2px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #26312A">Marfil</p>
+        <p style="margin: 0; font-size: 12.5px; color: #5A6B5E">#F8F8F8 · fondo alterno de sección</p>
+      </div>
+    </div>
+    <div style="margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px">
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #F2F7EE; color: #26312A; font-size: 13px">Texto de cuerpo <strong style="font-weight: 600; margin-left: 6px">#26312A</strong></span>
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #F2F7EE; color: #5A6B5E; font-size: 13px">Texto secundario <strong style="font-weight: 600; margin-left: 6px">#5A6B5E</strong></span>
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #F2F7EE; color: #26312A; font-size: 13px">Bordes <strong style="font-weight: 600; margin-left: 6px">#DCE5D6</strong></span>
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #F2F7EE; color: #26312A; font-size: 13px"><span style="display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 3px; background: #C3D69B; border: 1px solid #DCE5D6"></span>Bajada sobre verde <strong style="font-weight: 600; margin-left: 6px">#C3D69B</strong></span>
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #F2F7EE; color: #26312A; font-size: 13px"><span style="display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 3px; background: #45554A"></span>Texto de la banda de ayuda <strong style="font-weight: 600; margin-left: 6px">#45554A</strong></span>
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #F2F7EE; color: #26312A; font-size: 13px"><span style="display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 3px; background: #E4EADE; border: 1px solid #DCE5D6"></span>Separadores de sección <strong style="font-weight: 600; margin-left: 6px">#E4EADE</strong></span>
+      <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 6px; background: #FFFFFF; border: 1px solid #DCE5D6; color: #26312A; font-size: 13px"><span style="display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 3px; background: #F2F7EE; border: 1px solid #DCE5D6"></span>Fondo del recuadro lateral <strong style="font-weight: 600; margin-left: 6px">#F2F7EE</strong></span>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Tipografía</h2>
+    <p style="margin: 0 0 24px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Poppins para todo lo que titula; Inter para todo lo que se lee de corrido. Dos familias, sin excepciones.</p>
+    <div style="display: flex; flex-direction: column; gap: 22px">
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Poppins 600 · 46/1.14</span>
+        <span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 46px; line-height: 1.14; color: #034915">Título de portada</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Poppins 600 · 28/1.25</span>
+        <span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 28px; line-height: 1.25; color: #034915">Encabezado de sección</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Poppins 600 · 19</span>
+        <span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 19px; color: #034915">Título de tarjeta</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Inter 600 · 12/1.6 · 0.12em</span>
+        <span style="display: inline-block; padding: 10px 16px; border-radius: 6px; background: #034915; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; line-height: 1.6; text-transform: uppercase; color: #72BF00">Volanta sobre verde profundo</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Poppins 600 · 13/0.14em</span>
+        <span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #0A5F2A">Título del recuadro lateral</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Inter 400 · 17/1.7</span>
+        <span style="max-width: 62ch; font-size: 17px; line-height: 1.7; color: #26312A">Cuerpo principal. Diecisiete píxeles con interlineado 1.7 y un ancho máximo de unos 65 caracteres.</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Inter 400 · 15/1.65</span>
+        <span style="max-width: 62ch; font-size: 15px; line-height: 1.65; color: #5A6B5E">Texto de apoyo dentro de tarjetas y pasos, en gris verdoso.</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 28px">
+        <span style="flex: 0 0 150px; font-size: 12px; color: #5A6B5E">Poppins 700 · 40/1</span>
+        <span style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: #72BF00">01</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Botones</h2>
+    <p style="margin: 0 0 22px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Primario: altura mínima 48 px. Secundario: 44 px, borde de 1,5 px e ícono de enlace externo. Radio de 8 px y etiqueta en Poppins 600 en ambos. Un solo botón primario por tarjeta.</p>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+      <div>
+        <a href="#" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border-radius: 8px; background: #034915; color: #FFFFFF; font-family: Poppins, sans-serif; font-weight: 600; font-size: 15px; text-decoration: none">Primario</a>
+        <p style="margin: 10px 0 0; font-size: 12.5px; color: #5A6B5E">Abrir el formulario</p>
+      </div>
+      <div>
+        <a href="#" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border-radius: 8px; background: #0A5F2A; color: #FFFFFF; font-family: Poppins, sans-serif; font-weight: 600; font-size: 15px; text-decoration: none">Primario · hover</a>
+        <p style="margin: 10px 0 0; font-size: 12.5px; color: #5A6B5E">Al pasar el cursor · a implementar</p>
+      </div>
+      <div>
+        <a href="#" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; gap: 8px; padding: 0 20px; border-radius: 8px; border: 1.5px solid #034915; color: #034915; background: #FFFFFF; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14.5px; text-decoration: none">Acceso a la matriz<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+        <p style="margin: 10px 0 0; font-size: 12.5px; color: #5A6B5E">Secundario · se abre en pestaña nueva</p>
+      </div>
+      
+    </div>
+    
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Chips y etiquetas</h2>
+    <p style="margin: 0 0 20px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Una sola etiqueta acompaña a cada instrumento: el tiempo estimado.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px">
+      <span style="display: inline-flex; align-items: center; height: 26px; padding: 0 12px; border-radius: 13px; background: #EDF4E7; color: #0A5F2A; font-size: 12.5px; font-weight: 500">Tiempo estimado: 20 minutos</span>
+      
+      
+      
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Anatomía de la tarjeta de instrumento</h2>
+    <p style="margin: 0 0 20px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Cuadro numerado de 58 px, título, etiqueta de tiempo y botón al extremo derecho. Las cuatro tarjetas son idénticas: ninguna queda en espera. En pantalla angosta el botón baja a la línea siguiente.</p>
+    <article style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; background: #FFFFFF; border: 1px solid #DCE5D6; border-radius: 14px; padding: 26px 30px">
+      <div style="flex: 0 0 auto; width: 58px; height: 58px; border-radius: 12px; background: #034915; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Poppins, sans-serif; font-weight: 600; font-size: 22px">1</div>
+      <div style="flex: 999 1 320px; min-width: 0">
+        <h3 style="margin: 0 0 12px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 19px; color: #034915">[Nombre del instrumento]</h3>
+        
+        <div style="display: flex; gap: 8px">
+          <span style="display: inline-flex; align-items: center; height: 26px; padding: 0 12px; border-radius: 13px; background: #EDF4E7; color: #0A5F2A; font-size: 12.5px; font-weight: 500">Tiempo estimado: xx minutos</span>
+        </div>
+      </div>
+      <a href="#" style="flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 28px; border-radius: 8px; background: #034915; color: #FFFFFF; font-family: Poppins, sans-serif; font-weight: 600; font-size: 15px; text-decoration: none">Comenzar</a>
+    </article>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Franja de logos</h2>
+    <p style="margin: 0 0 20px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Franja blanca al comienzo de la página, antes del encabezado verde. La imagen va centrada, con un ancho máximo de 720 px y 20 px de margen vertical. En pantalla angosta ocupa todo el ancho disponible.</p>
+    <div style="border: 1px solid #DCE5D6; border-radius: 10px; overflow: hidden">
+      <div style="background: #FFFFFF; padding: 20px 40px">
+        <img src="./assets/d334ff7828b65d10b187efa4ecc60f77.png" alt="Cooperación alemana, por medio de la GIZ; AdaptaInfra; OLACEFS" style="display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto">
+      </div>
+      <div style="height: 28px; background: #034915"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Paso de «Antes de empezar»</h2>
+    <p style="margin: 0 0 24px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Número en Poppins 700 de 40 px con el color de acento, título de 17 px y texto de 15 px. Los pasos se reparten en una grilla de hasta cuatro columnas, de al menos 220 px cada una y 32 px de separación. El primero lleva un botón secundario.</p>
+    <div style="max-width: 260px">
+      <p style="margin: 0 0 12px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: #72BF00">01</p>
+      <h3 style="margin: 0 0 8px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 17px; color: #034915">Tenga la matriz abierta</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #5A6B5E">Cada pregunta lleva un código, por ejemplo CUM-P1-07, que es el mismo en el archivo y en el formulario.</p>
+      <a href="#" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; min-height: 44px; padding: 0 20px; border: 1.5px solid #034915; border-radius: 8px; background: #FFFFFF; color: #034915; font-family: Poppins, sans-serif; font-weight: 600; font-size: 14.5px; text-decoration: none">Acceso a la matriz<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Pie de página</h2>
+    <p style="margin: 0 0 20px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Banda de verde profundo. A la izquierda, el texto institucional en 13,5 px con el verde menta. A la derecha, la leyenda «Con el apoyo de» (11 px) sobre el logo de Itera (59 × 44 px, opacidad 0,9), centrados entre sí. Es un apoyo discreto: no compite con la barra de logos del comienzo. En pantalla angosta el bloque baja debajo del texto.</p>
+    <div style="background: #034915; border-radius: 10px; padding: 32px 36px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+      <p style="margin: 0; max-width: 46ch; font-size: 13.5px; line-height: 1.6; color: #A6D39F">Proyecto Regional AdaptaInfra · OLACEFS y la Cooperación Alemana, por medio de GIZ. Proceso de validación de la Guía Metodológica de Auditoría de Proyectos de Infraestructura Sostenible.</p>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+        <span style="font-size: 11px; letter-spacing: 0.04em; color: #A6D39F">Con el apoyo de</span>
+        <img src="./assets/83f713a3b6b9e5216815d753587d4aca.png" alt="Itera" style="display: block; height: 59px; width: 44px; opacity: 0.9">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin: 0 0 6px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 20px; color: #034915">Espaciado, radios y ritmo de sección</h2>
+    <p style="margin: 0 0 20px; font-size: 14.5px; line-height: 1.6; color: #5A6B5E">Escala de 8. Contenido centrado en 1120 px con 40 px de margen lateral. Las secciones alternan blanco y marfil, separadas por una línea de 1 px.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end">
+      <div style="display: flex; align-items: flex-end; gap: 12px">
+        <div style="width: 8px; height: 8px; background: #A6D39F"></div>
+        <div style="width: 16px; height: 16px; background: #A6D39F"></div>
+        <div style="width: 24px; height: 24px; background: #72BF00"></div>
+        <div style="width: 32px; height: 32px; background: #00833D"></div>
+        <div style="width: 48px; height: 48px; background: #0A5F2A"></div>
+        <div style="width: 72px; height: 72px; background: #034915"></div>
+      </div>
+      <div style="display: flex; align-items: flex-end; gap: 14px">
+        <div style="width: 60px; height: 60px; border: 1.5px solid #DCE5D6; border-radius: 8px; display: flex; align-items: flex-end; justify-content: center; font-size: 11px; color: #5A6B5E; padding-bottom: 4px">8</div>
+        <div style="width: 60px; height: 60px; border: 1.5px solid #DCE5D6; border-radius: 10px; display: flex; align-items: flex-end; justify-content: center; font-size: 11px; color: #5A6B5E; padding-bottom: 4px">10</div>
+        <div style="width: 60px; height: 60px; border: 1.5px solid #DCE5D6; border-radius: 12px; display: flex; align-items: flex-end; justify-content: center; font-size: 11px; color: #5A6B5E; padding-bottom: 4px">12</div>
+        <div style="width: 60px; height: 60px; border: 1.5px solid #DCE5D6; border-radius: 14px; display: flex; align-items: flex-end; justify-content: center; font-size: 11px; color: #5A6B5E; padding-bottom: 4px">14</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1000,"height":3400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
